@@ -46,3 +46,14 @@ p {
     font-size: 18px;
     line-height: 1.6;
 }
+
+.banner {
+    display: block;
+    width: 800px;
+    height: 600px;
+    max-width: 90%;
+    margin: 30px auto;
+    object-fit: cover;
+    border: 3px solid #4b5320;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
