@@ -7,3 +7,10 @@ function toggleInfo(id) {
         infoBox.style.display = "none";
     }
 }
+
+function submitSurvey(event) {
+    event.preventDefault();
+    document.getElementById("message").innerHTML =
+        "Thank you! Your survey has been successfully submitted.";
+
+}
