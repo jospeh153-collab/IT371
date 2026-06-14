@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact</title>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+    
 <body>
 
 <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html">Survey</a>
     <a href="training.html">Training</a>
     <a href="records.html">Records</a>
     <a href="resources.html">Resources</a>
@@ -19,9 +20,35 @@
 <img src="Banner.jpg" alt="Military Document Management Banner" class="banner">
 
 <div class="container">
-    <h1>Contact</h1>
-    <p>This page is currently under construction.</p>
+    <h1>website Survey</h1>h1>
+    <p>please complete the survey below.</p>
+    <Form onsubmit="submitSurvey(event)">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" required><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" required><br><br>
+
+        <label for="rating">How would you rate this website?</label><br>
+
+        <select id="rating">
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select>
+
+        <br><br>
+        <label for="comments">Comments</label><br>
+        <textarea id="comments" rows="5" cols="50"></textarea>
+        <br><br>
+        <input type="submit" value="Submit Survey">
+        
+    </form>
+    <p id="message"></p>
+    
 </div>
+<script src="script.js"></script>
 
 </body>
 </html>
